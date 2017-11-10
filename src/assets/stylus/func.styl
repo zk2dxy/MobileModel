@@ -1,0 +1,31 @@
+// 背景图片
+bg-image($url, $repeat, $position, $bgSize) {
+  background-image: url($url)
+  if($repeat) {
+    background-repeat $repeat
+  }
+  if($position) {
+    background-position $postion
+  }
+  if($bgSize) {
+    background-size $bgSize
+  }
+}
+
+// 不换行
+no-wrap()
+  text-overflow: ellipsis
+  overflow: hidden
+  white-space: nowrap
+
+// 扩展点击区域
+extend-click()
+  position: relative
+  &:before
+    position: absolute
+    top: -4px
+    left: -4px
+    right: -4px
+    bottom: -4px
+    content ''
+    z-index -1

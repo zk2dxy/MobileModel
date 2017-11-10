@@ -81,6 +81,6 @@ logLevel: 'info'
 
 > Vue lazy load
 ```
-  <img style="margin:0 auto;display: block" v-lazy="imgSrc" width="240" height="120"/>
+  <img v-lazy="imgSrc" width="240" height="120"/>
 ```
 
